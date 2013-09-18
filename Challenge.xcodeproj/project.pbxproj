@@ -22,6 +22,7 @@
 		C6126C9917E9BFC600F065D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6126C7817E9BFC600F065D8 /* UIKit.framework */; };
 		C6126CA117E9BFC600F065D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6126C9F17E9BFC600F065D8 /* InfoPlist.strings */; };
 		C6126CA317E9BFC600F065D8 /* ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6126CA217E9BFC600F065D8 /* ChallengeTests.m */; };
+		C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6126CAC17E9DDD000F065D8 /* Default.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C6126C9E17E9BFC600F065D8 /* ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		C6126CA017E9BFC600F065D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6126CA217E9BFC600F065D8 /* ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengeTests.m; sourceTree = "<group>"; };
+		C6126CAC17E9DDD000F065D8 /* Default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Default.wav; path = "../../../../../../Users/wanner/Dropbox/Porsche/ES-GW 76 (2.7 1976)/NavigationsSoftware_PorscheClassicRadio/maptrip/res/sounds/Default.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				C6126C8917E9BFC600F065D8 /* Main_iPad.storyboard */,
 				C6126C8C17E9BFC600F065D8 /* ViewController.h */,
 				C6126C8D17E9BFC600F065D8 /* ViewController.m */,
+				C6126CAC17E9DDD000F065D8 /* Default.wav */,
 				C6126C8F17E9BFC600F065D8 /* Images.xcassets */,
 				C6126C7B17E9BFC600F065D8 /* Supporting Files */,
 			);
@@ -202,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Gerhard Wanner";
 				TargetAttributes = {
+					C6126C7017E9BFC500F065D8 = {
+						DevelopmentTeam = U5RNG295W2;
+					};
 					C6126C9417E9BFC600F065D8 = {
 						TestTargetID = C6126C7017E9BFC500F065D8;
 					};
@@ -233,6 +239,7 @@
 			files = (
 				C6126C8B17E9BFC600F065D8 /* Main_iPad.storyboard in Resources */,
 				C6126C9017E9BFC600F065D8 /* Images.xcassets in Resources */,
+				C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */,
 				C6126C8817E9BFC600F065D8 /* Main_iPhone.storyboard in Resources */,
 				C6126C7F17E9BFC600F065D8 /* InfoPlist.strings in Resources */,
 			);
@@ -392,10 +399,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
