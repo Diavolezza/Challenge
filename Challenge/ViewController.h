@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UIButton *counter;
+}
+
+@property(nonatomic, retain) IBOutlet UIButton *counter;
+
+-(IBAction)incrementCounter:(id)sender;
+
+-(IBAction)resetCounter:(id)sender;
 
 @end
