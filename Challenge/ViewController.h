@@ -8,14 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    IBOutlet UIButton *counter;
+@interface ViewController : UIViewController
+{
+    IBOutlet UILabel *counter;
+    IBOutlet UITextField *totalTime;
 }
 
-@property(nonatomic, retain) IBOutlet UIButton *counter;
+@property(nonatomic, retain) IBOutlet UILabel *counter;
+@property(nonatomic, retain) IBOutlet UITextField *totalTime;
 
 -(IBAction)incrementCounter:(id)sender;
-
 -(IBAction)resetCounter:(id)sender;
+
+-(void)displayCounter;
+-(void)displayTimer;
 
 @end

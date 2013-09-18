@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 
-// ivar
 SystemSoundID mBeep;
+int mLap = 0;
+bool running = false;
+NSTimer *timer;
+int timerCount;
 
 @interface ViewController ()
 
@@ -19,9 +22,11 @@ SystemSoundID mBeep;
 @implementation ViewController
 
 @synthesize counter;
+@synthesize totalTime;
 
 -(IBAction)resetCounter:(id)sender
 {
+    NSLog(@"resetCounter");
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:@"Rundenzähler zurücksetzen" message:@"Rundenzähler auf 0 zurücksetzen?" delegate:self cancelButtonTitle:@"Nein" otherButtonTitles:@"Ja", nil];
     [alert show];
@@ -29,19 +34,40 @@ SystemSoundID mBeep;
 
 -(IBAction)incrementCounter:(id)sender
 {
-//    int c = counter.currentTitle.intValue+1;
-//    [counter setTitle: [NSString stringWithFormat:@"%d", c ] forState:UIControlStateNormal];
-    AudioServicesPlaySystemSound(mBeep);
+    NSLog(@"incrementCounter");
+    if(!running) {
+        running = true;
+        timerCount = 0;
+        timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(displayTimer) userInfo:nil repeats:YES];
+    }
+    mLap++;
+    [self displayCounter];
+}
+
+- (void)displayTimer
+{
+    NSLog(@"displayTimer");
+    totalTime.text = [NSString stringWithFormat:@"%d", timerCount++];
 }
 
 -(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"alertView");
     if(buttonIndex != [alertView cancelButtonIndex]) {
         NSLog(@"Ok clicked");
-        [counter setTitle: @"0" forState:UIControlStateNormal];
-        AudioServicesPlaySystemSound(mBeep);
+        mLap = 0;
+        running = false;
+        [self displayCounter];
     } else {
         NSLog(@"Cancel clicked");
     }
+}
+
+-(void)displayCounter
+{
+    NSLog([NSString stringWithFormat:@"%d", mLap ]);
+    counter.text = [NSString stringWithFormat:@"%d", mLap ];
+//    [counter setTitle: [NSString stringWithFormat:@"%d", mLap ] forState:UIControlStateNormal];
+    AudioServicesPlaySystemSound(mBeep);
 }
 
 - (void)viewDidLoad
