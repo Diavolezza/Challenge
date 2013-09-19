@@ -23,6 +23,7 @@
 		C6126CA117E9BFC600F065D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6126C9F17E9BFC600F065D8 /* InfoPlist.strings */; };
 		C6126CA317E9BFC600F065D8 /* ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6126CA217E9BFC600F065D8 /* ChallengeTests.m */; };
 		C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6126CAC17E9DDD000F065D8 /* Default.wav */; };
+		C6EBECC917EB1AA00021ACBD /* Laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6EBECC817EB1AA00021ACBD /* Laser.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C6126CA017E9BFC600F065D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6126CA217E9BFC600F065D8 /* ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengeTests.m; sourceTree = "<group>"; };
 		C6126CAC17E9DDD000F065D8 /* Default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Default.wav; path = "../../../../../../Users/wanner/Dropbox/Porsche/ES-GW 76 (2.7 1976)/NavigationsSoftware_PorscheClassicRadio/maptrip/res/sounds/Default.wav"; sourceTree = "<group>"; };
+		C6EBECC817EB1AA00021ACBD /* Laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Laser.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		C6126C7A17E9BFC600F065D8 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C6EBECC817EB1AA00021ACBD /* Laser.wav */,
 				C6126C8317E9BFC600F065D8 /* AppDelegate.h */,
 				C6126C8417E9BFC600F065D8 /* AppDelegate.m */,
 				C6126C8617E9BFC600F065D8 /* Main_iPhone.storyboard */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EBECC917EB1AA00021ACBD /* Laser.wav in Resources */,
 				C6126C8B17E9BFC600F065D8 /* Main_iPad.storyboard in Resources */,
 				C6126C9017E9BFC600F065D8 /* Images.xcassets in Resources */,
 				C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */,
@@ -487,6 +491,7 @@
 				C6126CA817E9BFC600F065D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6126CA917E9BFC600F065D8 /* Build configuration list for PBXNativeTarget "ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				C6126CAB17E9BFC600F065D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
