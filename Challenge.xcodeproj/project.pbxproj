@@ -23,7 +23,9 @@
 		C6126CA117E9BFC600F065D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6126C9F17E9BFC600F065D8 /* InfoPlist.strings */; };
 		C6126CA317E9BFC600F065D8 /* ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6126CA217E9BFC600F065D8 /* ChallengeTests.m */; };
 		C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6126CAC17E9DDD000F065D8 /* Default.wav */; };
-		C6EBECC917EB1AA00021ACBD /* Laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6EBECC817EB1AA00021ACBD /* Laser.wav */; };
+		C6A3705017EC344100ECE243 /* Beep-Low.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704E17EC344100ECE243 /* Beep-Low.wav */; };
+		C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704F17EC344100ECE243 /* Beep-High.wav */; };
+		C6A3705517EC464800ECE243 /* SecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3705417EC464800ECE243 /* SecondaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,11 @@
 		C6126CA017E9BFC600F065D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6126CA217E9BFC600F065D8 /* ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengeTests.m; sourceTree = "<group>"; };
 		C6126CAC17E9DDD000F065D8 /* Default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Default.wav; path = "../../../../../../Users/wanner/Dropbox/Porsche/ES-GW 76 (2.7 1976)/NavigationsSoftware_PorscheClassicRadio/maptrip/res/sounds/Default.wav"; sourceTree = "<group>"; };
-		C6EBECC817EB1AA00021ACBD /* Laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Laser.wav; sourceTree = "<group>"; };
+		C6A3704E17EC344100ECE243 /* Beep-Low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-Low.wav"; sourceTree = "<group>"; };
+		C6A3704F17EC344100ECE243 /* Beep-High.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-High.wav"; sourceTree = "<group>"; };
+		C6A3705317EC464800ECE243 /* SecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryViewController.h; sourceTree = "<group>"; };
+		C6A3705417EC464800ECE243 /* SecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryViewController.m; sourceTree = "<group>"; };
+		C6D88DEA17EC5D28006A0079 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +124,16 @@
 		C6126C7A17E9BFC600F065D8 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				C6EBECC817EB1AA00021ACBD /* Laser.wav */,
+				C6A3704E17EC344100ECE243 /* Beep-Low.wav */,
+				C6A3704F17EC344100ECE243 /* Beep-High.wav */,
 				C6126C8317E9BFC600F065D8 /* AppDelegate.h */,
 				C6126C8417E9BFC600F065D8 /* AppDelegate.m */,
 				C6126C8617E9BFC600F065D8 /* Main_iPhone.storyboard */,
 				C6126C8917E9BFC600F065D8 /* Main_iPad.storyboard */,
 				C6126C8C17E9BFC600F065D8 /* ViewController.h */,
 				C6126C8D17E9BFC600F065D8 /* ViewController.m */,
+				C6A3705317EC464800ECE243 /* SecondaryViewController.h */,
+				C6A3705417EC464800ECE243 /* SecondaryViewController.m */,
 				C6126CAC17E9DDD000F065D8 /* Default.wav */,
 				C6126C8F17E9BFC600F065D8 /* Images.xcassets */,
 				C6126C7B17E9BFC600F065D8 /* Supporting Files */,
@@ -138,6 +147,7 @@
 				C6126C7C17E9BFC600F065D8 /* Challenge-Info.plist */,
 				C6126C7D17E9BFC600F065D8 /* InfoPlist.strings */,
 				C6126C8017E9BFC600F065D8 /* main.m */,
+				C6D88DEA17EC5D28006A0079 /* main.h */,
 				C6126C8217E9BFC600F065D8 /* Challenge-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -240,12 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6EBECC917EB1AA00021ACBD /* Laser.wav in Resources */,
 				C6126C8B17E9BFC600F065D8 /* Main_iPad.storyboard in Resources */,
+				C6A3705017EC344100ECE243 /* Beep-Low.wav in Resources */,
 				C6126C9017E9BFC600F065D8 /* Images.xcassets in Resources */,
 				C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */,
 				C6126C8817E9BFC600F065D8 /* Main_iPhone.storyboard in Resources */,
 				C6126C7F17E9BFC600F065D8 /* InfoPlist.strings in Resources */,
+				C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +278,7 @@
 				C6126C8E17E9BFC600F065D8 /* ViewController.m in Sources */,
 				C6126C8517E9BFC600F065D8 /* AppDelegate.m in Sources */,
 				C6126C8117E9BFC600F065D8 /* main.m in Sources */,
+				C6A3705517EC464800ECE243 /* SecondaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +420,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,8 +438,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
