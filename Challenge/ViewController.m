@@ -7,16 +7,15 @@
 //
 //
 // TODO
-// - Totalanzeige nach letzter Runde stehen lassen und nicht mehr weiterzählen
-// - Aktuelle Rundenzeit anzeigen
-// - Options-Fenster für die Konstanten
 //
 
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "main.h"
 
-SystemSoundID mBeep;
-SystemSoundID mAlert;
+SystemSoundID mClick;
+SystemSoundID mBeepLow;
+SystemSoundID mBeepHigh;
 
 int mLap = -1;                      // Rundenanzahl
 bool running = false;               // Gibt an, ob die Stopuhr läuft
@@ -30,10 +29,6 @@ NSDate *endRefTime;                 // Endzeit der Referenzrunde
 
 // Referenzrunde
 NSTimeInterval refLapTimeInterval;  // Zeit der Referenzrunde
-
-const int REF_LAP = 2;              // Runde, in der die Referenzzeit genommen wird
-const int TOTAL_LAP = 20;           // Gesamtanzahl Runden
-const int BOX_TIME = 90;            // Geschätzte Boxenzeit inkl. Ein- und Ausfahrt
 
 const int ALERT_BOX = 0;
 const int ALERT_RESET = 1;
@@ -85,7 +80,7 @@ const int ALERT_RESET = 1;
 {
     mLap--;
     [self displayCounter];
-     AudioServicesPlaySystemSound(mBeep);
+    AudioServicesPlaySystemSound(mClick);
 }
 
 -(void)displayCounter
@@ -95,6 +90,23 @@ const int ALERT_RESET = 1;
         lap = 0;
     }
     counter.text = [NSString stringWithFormat:@"%d", lap ];
+}
+
+- (void)displayLapTime
+{
+    NSString * timeString;
+    if(startTime != nil) {
+        NSDate *currentDate = [NSDate date];
+        NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startLapTime];
+        NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+        timeString = [dateFormatter stringFromDate:timerDate];
+    } else {
+        timeString = @"";
+    }
+    lapTime.text = timeString;
 }
 
 - (void)displayLastLapTime
@@ -128,13 +140,14 @@ const int ALERT_RESET = 1;
         timeString = @"";
     }
     refLapTime.text = timeString;
-
+    
 }
 
 -(void)displayTimerTimes
 {
     [self displayTotalTime];
     [self displayTargetTotalTime];
+    [self displayLapTime];
 }
 
 - (void)displayTotalTime
@@ -145,11 +158,11 @@ const int ALERT_RESET = 1;
         NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startTime];
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"H:mm:ss.S"];
+        [dateFormatter setDateFormat:@"mm:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
-        timeString = @"0:00:00.0";
+        timeString = @"00:00.0";
     }
     totalTime.text = timeString;
 }
@@ -160,12 +173,12 @@ const int ALERT_RESET = 1;
     
     if(mLap >= REF_LAP) {
         // Gesamtzeit Wertungsprüfung auf Basis der Referenzrunde
-        NSTimeInterval timeInterval = (20 - REF_LAP) * refLapTimeInterval;
+        NSTimeInterval timeInterval = (TOTAL_LAP-REF_LAP) * refLapTimeInterval;
         // Zeit seit Ende der Referenzrunde abziehen
         NSDate *currentDate = [NSDate date];
         timeInterval -= [currentDate timeIntervalSinceDate:endRefTime];
         // Durch die Anzahl verbleibender Runden teilen
-        timeInterval = timeInterval / (20-mLap);
+        timeInterval = timeInterval / (TOTAL_LAP-mLap);
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"mm:ss.S"];
@@ -181,9 +194,12 @@ const int ALERT_RESET = 1;
 {
     NSString * timeString;
     
+    if(mLap >= TOTAL_LAP) {
+        return;
+    }
     if(mLap >= REF_LAP) {
         // Gesamtzeit Wertungsprüfung auf Basis der Referenzrunde
-        NSTimeInterval timeInterval = (20 - REF_LAP) * refLapTimeInterval;
+        NSTimeInterval timeInterval = (TOTAL_LAP-REF_LAP) * refLapTimeInterval;
         // Erwartete Boxenzeit dazurechnen
         if(!inBox) {
             timeInterval = timeInterval + BOX_TIME;
@@ -191,15 +207,17 @@ const int ALERT_RESET = 1;
         // Zeit seit Ende der Referenzrunde abziehen
         NSDate *currentDate = [NSDate date];
         timeInterval -= [currentDate timeIntervalSinceDate:endRefTime];
-        // Beep 3 Sekunden vor Ende
-        NSLog(@"%f", timeInterval);
+        // Niedriger Ton 3 Sekunden vor Ende
         if(((timeInterval < 3.05) && (timeInterval > 2.95)) ||
            ((timeInterval < 2.05) && (timeInterval > 1.95)) ||
-           ((timeInterval < 1.05) && (timeInterval > 0.95)) ||
-           ((timeInterval < 0.05) && (timeInterval > -0.05))) 
+           ((timeInterval < 1.05) && (timeInterval > 0.95)))
         {
-            NSLog(@"Beep");
-            AudioServicesPlaySystemSound(mAlert);
+            AudioServicesPlaySystemSound(mBeepLow);
+        }
+        // Hoher Ton 3 Sekunden vor Ende
+        if((timeInterval < 0.05) && (timeInterval > -0.05))
+        {
+            AudioServicesPlaySystemSound(mBeepHigh);
         }
         // Wieder hochzählen
         if(timeInterval < 0) {
@@ -208,7 +226,7 @@ const int ALERT_RESET = 1;
         }
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"H:mm:ss.S"];
+        [dateFormatter setDateFormat:@"mm:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -222,7 +240,7 @@ const int ALERT_RESET = 1;
 {
     mLap++;
     [self displayCounter];
-    AudioServicesPlaySystemSound(mBeep);
+    AudioServicesPlaySystemSound(mClick);
 }
 
 -(IBAction)lap:(id)sender
@@ -247,7 +265,7 @@ const int ALERT_RESET = 1;
     [self displayLastLapTime];
     [self displayTargetLapTime];
     startLapTime = [NSDate date];
-    AudioServicesPlaySystemSound(mBeep);
+    AudioServicesPlaySystemSound(mClick);
 }
 
 -(IBAction)reset:(id)sender
@@ -286,6 +304,7 @@ const int ALERT_RESET = 1;
     endRefTime = nil;
     startLapTime = nil;
     [self displayTotalTime];
+    [self displayLapTime];
     [self displayRefTime];
     [self displayLastLapTime];
     [self displayTargetLapTime];
@@ -297,12 +316,15 @@ const int ALERT_RESET = 1;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // Create the sound ID
-    NSURL* beepURL = [[NSBundle mainBundle]
-                      URLForResource:@"Default" withExtension:@"wav"];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepURL, &mBeep);
-    NSURL* alertURL = [[NSBundle mainBundle]
-                      URLForResource:@"Laser" withExtension:@"wav"];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)alertURL, &mAlert);
+    NSURL* clickURL = [[NSBundle mainBundle]
+                       URLForResource:@"Default" withExtension:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)clickURL, &mClick);
+    NSURL* beepLowURL = [[NSBundle mainBundle]
+                         URLForResource:@"Beep-Low" withExtension:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepLowURL, &mBeepLow);
+    NSURL* beepHighURL = [[NSBundle mainBundle]
+                          URLForResource:@"Beep-High" withExtension:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepHighURL, &mBeepHigh);
     [self resetTimer];
 }
 
@@ -310,8 +332,9 @@ const int ALERT_RESET = 1;
 {
     [super viewDidUnload];
 	// Do any additional setup after loading the view, typically from a nib.
-    AudioServicesDisposeSystemSoundID(mBeep);
-    AudioServicesDisposeSystemSoundID(mAlert);
+    AudioServicesDisposeSystemSoundID(mClick);
+    AudioServicesDisposeSystemSoundID(mBeepLow);
+    AudioServicesDisposeSystemSoundID(mBeepHigh);
 }
 
 - (void)didReceiveMemoryWarning
