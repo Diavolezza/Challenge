@@ -177,6 +177,10 @@ const int ALERT_RESET = 1;
         // Zeit seit Ende der Referenzrunde abziehen
         NSDate *currentDate = [NSDate date];
         timeInterval -= [currentDate timeIntervalSinceDate:endRefTime];
+        // Vor Boxenstopp? --> Boxenzeit abziehen
+        if(!inBox) {
+            timeInterval -= BOX_TIME;
+        }
         // Durch die Anzahl verbleibender Runden teilen
         timeInterval = timeInterval / (TOTAL_LAP-mLap);
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
@@ -200,33 +204,33 @@ const int ALERT_RESET = 1;
     if(mLap >= REF_LAP) {
         // Gesamtzeit Wertungsprüfung auf Basis der Referenzrunde
         NSTimeInterval timeInterval = (TOTAL_LAP-REF_LAP) * refLapTimeInterval;
-        // Erwartete Boxenzeit dazurechnen
-        if(!inBox) {
-            timeInterval = timeInterval + BOX_TIME;
-        }
         // Zeit seit Ende der Referenzrunde abziehen
         NSDate *currentDate = [NSDate date];
         timeInterval -= [currentDate timeIntervalSinceDate:endRefTime];
-        // Niedriger Ton 3 Sekunden vor Ende
-        if(((timeInterval < 3.05) && (timeInterval > 2.95)) ||
+        // Niedriger Ton 5 Sekunden vor Ende
+        if(((timeInterval < 5.05) && (timeInterval > 4.95)) ||
+           ((timeInterval < 4.05) && (timeInterval > 3.95)) ||
+           ((timeInterval < 3.05) && (timeInterval > 2.95)) ||
            ((timeInterval < 2.05) && (timeInterval > 1.95)) ||
            ((timeInterval < 1.05) && (timeInterval > 0.95)))
         {
             AudioServicesPlaySystemSound(mBeepLow);
         }
-        // Hoher Ton 3 Sekunden vor Ende
+        // Hoher Ton am Ende
         if((timeInterval < 0.05) && (timeInterval > -0.05))
         {
             AudioServicesPlaySystemSound(mBeepHigh);
         }
         // Wieder hochzählen
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         if(timeInterval < 0) {
             timeInterval = -timeInterval;
             targetTotalTime.backgroundColor = [UIColor clearColor];
+            [dateFormatter setDateFormat:@"-mm:ss.S"];
+        } else {
+            [dateFormatter setDateFormat:@"mm:ss.S"];
         }
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -326,6 +330,7 @@ const int ALERT_RESET = 1;
                           URLForResource:@"Beep-High" withExtension:@"wav"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepHighURL, &mBeepHigh);
     [self resetTimer];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 }
 
 - (void)viewDidUnload
@@ -335,6 +340,7 @@ const int ALERT_RESET = 1;
     AudioServicesDisposeSystemSoundID(mClick);
     AudioServicesDisposeSystemSoundID(mBeepLow);
     AudioServicesDisposeSystemSoundID(mBeepHigh);
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
 }
 
 - (void)didReceiveMemoryWarning
