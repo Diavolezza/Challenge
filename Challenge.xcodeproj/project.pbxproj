@@ -25,6 +25,7 @@
 		C6A3705017EC344100ECE243 /* Beep-Low.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704E17EC344100ECE243 /* Beep-Low.wav */; };
 		C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704F17EC344100ECE243 /* Beep-High.wav */; };
 		C6A3705517EC464800ECE243 /* SecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3705417EC464800ECE243 /* SecondaryViewController.m */; };
+		C6D1056B17F08536006498D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D1056A17F08536006498D6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		C6A3704F17EC344100ECE243 /* Beep-High.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-High.wav"; sourceTree = "<group>"; };
 		C6A3705317EC464800ECE243 /* SecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryViewController.h; sourceTree = "<group>"; };
 		C6A3705417EC464800ECE243 /* SecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryViewController.m; sourceTree = "<group>"; };
+		C6D1056A17F08536006498D6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6D88DEA17EC5D28006A0079 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		C6126C6817E9BFC500F065D8 = {
 			isa = PBXGroup;
 			children = (
+				C6D1056A17F08536006498D6 /* Default-568h@2x.png */,
 				C6126C7A17E9BFC600F065D8 /* Challenge */,
 				C6126C9C17E9BFC600F065D8 /* ChallengeTests */,
 				C6126C7317E9BFC500F065D8 /* Frameworks */,
@@ -252,6 +255,7 @@
 				C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */,
 				C6126C8817E9BFC600F065D8 /* Main_iPhone.storyboard in Resources */,
 				C6126C7F17E9BFC600F065D8 /* InfoPlist.strings in Resources */,
+				C6D1056B17F08536006498D6 /* Default-568h@2x.png in Resources */,
 				C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
