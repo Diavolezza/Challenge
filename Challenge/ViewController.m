@@ -28,7 +28,7 @@ NSDate *startRefTime;               // Startzeit der Referenzrunde
 NSDate *endRefTime;                 // Endzeit der Referenzrunde
 
 // Referenzrunde
-NSTimeInterval refLapTimeInterval;  // Zeit der Referenzrunde
+NSTimeInterval refLapTimeInterval = 0;  // Zeit der Referenzrunde
 
 const int ALERT_BOX = 0;
 const int ALERT_RESET = 1;
@@ -49,6 +49,10 @@ const int ALERT_RESET = 1;
 @synthesize boxButton;
 @synthesize incButton;
 @synthesize decButton;
+@synthesize refPlusHButton;
+@synthesize refMinusHButton;
+@synthesize refPlusZButton;
+@synthesize refMinusZButton;
 
 -(void)alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (alertView.tag) {
@@ -70,6 +74,7 @@ const int ALERT_RESET = 1;
 
 -(IBAction)box:(id)sender
 {
+    AudioServicesPlaySystemSound(mClick);
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:@"Box" message:@"Boxenstop?" delegate:self cancelButtonTitle:@"Nein" otherButtonTitles:@"Ja", nil ];
     alert.tag = ALERT_BOX;
@@ -80,7 +85,41 @@ const int ALERT_RESET = 1;
 {
     mLap--;
     [self displayCounter];
+    [self displayTargetLapTime];
     AudioServicesPlaySystemSound(mClick);
+}
+
+-(IBAction)refPlusH:(id)sender
+{
+    refLapTimeInterval = refLapTimeInterval+0.01;
+    [self displayNewRefTime];
+}
+
+-(IBAction)refMinusH:(id)sender
+{
+    refLapTimeInterval = refLapTimeInterval-0.01;
+    [self displayNewRefTime];
+}
+
+-(IBAction)refPlusZ:(id)sender
+{
+    refLapTimeInterval = refLapTimeInterval+0.1;
+    [self displayNewRefTime];
+}
+
+-(IBAction)refMinusZ:(id)sender
+{
+    refLapTimeInterval = refLapTimeInterval-0.1;
+    [self displayNewRefTime];
+}
+
+-(void)displayNewRefTime
+{
+    AudioServicesPlaySystemSound(mClick);
+    [self displayRefTime];
+    [self displayCounter];
+    [self displayTargetLapTime];
+    [self displayTargetTotalTime];
 }
 
 -(void)displayCounter
@@ -100,7 +139,7 @@ const int ALERT_RESET = 1;
         NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startLapTime];
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setDateFormat:@"m:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -117,7 +156,7 @@ const int ALERT_RESET = 1;
         NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startLapTime];
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setDateFormat:@"m:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -126,14 +165,20 @@ const int ALERT_RESET = 1;
     lastLapTime.text = timeString;
 }
 
+- (void)calculateRefTime
+{
+    if(startLapTime != nil) {
+        refLapTimeInterval = [endRefTime timeIntervalSinceDate:startRefTime];
+    }
+}
+
 - (void)displayRefTime
 {
     NSString * timeString;
-    if(startLapTime != nil) {
-        refLapTimeInterval = [endRefTime timeIntervalSinceDate:startRefTime];
+    if(refLapTimeInterval != 0) {
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:refLapTimeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setDateFormat:@"m:ss.SS"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -158,11 +203,11 @@ const int ALERT_RESET = 1;
         NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startTime];
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setDateFormat:@"m:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
-        timeString = @"00:00.0";
+        timeString = @"0:00.0";
     }
     totalTime.text = timeString;
 }
@@ -185,7 +230,7 @@ const int ALERT_RESET = 1;
         timeInterval = timeInterval / (TOTAL_LAP-mLap);
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"mm:ss.S"];
+        [dateFormatter setDateFormat:@"m:ss.S"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
@@ -225,17 +270,17 @@ const int ALERT_RESET = 1;
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         if(timeInterval < 0) {
             timeInterval = -timeInterval;
-            targetTotalTime.backgroundColor = [UIColor clearColor];
-            [dateFormatter setDateFormat:@"-mm:ss.S"];
+//            targetTotalTime.backgroundColor = [UIColor clearColor];
+            [dateFormatter setDateFormat:@"-m:ss.S"];
         } else {
-            [dateFormatter setDateFormat:@"mm:ss.S"];
+            [dateFormatter setDateFormat:@"m:ss.S"];
         }
         NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         timeString = [dateFormatter stringFromDate:timerDate];
     } else {
         timeString = @"";
-        targetTotalTime.backgroundColor = [UIColor whiteColor];
+//        targetTotalTime.backgroundColor = [UIColor whiteColor];
     }
     targetTotalTime.text = timeString;
 }
@@ -244,6 +289,7 @@ const int ALERT_RESET = 1;
 {
     mLap++;
     [self displayCounter];
+    [self displayTargetLapTime];
     AudioServicesPlaySystemSound(mClick);
 }
 
@@ -261,6 +307,7 @@ const int ALERT_RESET = 1;
     }
     if(mLap == REF_LAP) {
         endRefTime = [NSDate date];
+        [self calculateRefTime];
         [self displayRefTime];
         incButton.enabled = true;
         decButton.enabled = true;
@@ -307,6 +354,7 @@ const int ALERT_RESET = 1;
     startRefTime = nil;
     endRefTime = nil;
     startLapTime = nil;
+    refLapTimeInterval = 0;
     [self displayTotalTime];
     [self displayLapTime];
     [self displayRefTime];
