@@ -21,10 +21,12 @@
 		C6126C9917E9BFC600F065D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6126C7817E9BFC600F065D8 /* UIKit.framework */; };
 		C6126CA117E9BFC600F065D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6126C9F17E9BFC600F065D8 /* InfoPlist.strings */; };
 		C6126CA317E9BFC600F065D8 /* ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6126CA217E9BFC600F065D8 /* ChallengeTests.m */; };
-		C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6126CAC17E9DDD000F065D8 /* Default.wav */; };
+		C61E69B3198190100031EE49 /* 968small-old.png in Resources */ = {isa = PBXBuildFile; fileRef = C61E69B2198190100031EE49 /* 968small-old.png */; };
 		C6A3705017EC344100ECE243 /* Beep-Low.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704E17EC344100ECE243 /* Beep-Low.wav */; };
 		C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6A3704F17EC344100ECE243 /* Beep-High.wav */; };
 		C6A3705517EC464800ECE243 /* SecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3705417EC464800ECE243 /* SecondaryViewController.m */; };
+		C6AC8D4020DD25DB00FAC50F /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6AC8D3F20DD25DB00FAC50F /* Default.wav */; };
+		C6AC8D4620DD29A700FAC50F /* 968small.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC8D4520DD29A600FAC50F /* 968small.png */; };
 		C6D1056B17F08536006498D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D1056A17F08536006498D6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +60,13 @@
 		C6126C9E17E9BFC600F065D8 /* ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		C6126CA017E9BFC600F065D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6126CA217E9BFC600F065D8 /* ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengeTests.m; sourceTree = "<group>"; };
-		C6126CAC17E9DDD000F065D8 /* Default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Default.wav; path = "../../../../../../Users/wanner/Dropbox/Porsche/ES-GW 76 (2.7 1976)/NavigationsSoftware_PorscheClassicRadio/maptrip/res/sounds/Default.wav"; sourceTree = "<group>"; };
+		C61E69B2198190100031EE49 /* 968small-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "968small-old.png"; sourceTree = "<group>"; };
 		C6A3704E17EC344100ECE243 /* Beep-Low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-Low.wav"; sourceTree = "<group>"; };
 		C6A3704F17EC344100ECE243 /* Beep-High.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-High.wav"; sourceTree = "<group>"; };
 		C6A3705317EC464800ECE243 /* SecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryViewController.h; sourceTree = "<group>"; };
 		C6A3705417EC464800ECE243 /* SecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryViewController.m; sourceTree = "<group>"; };
+		C6AC8D3F20DD25DB00FAC50F /* Default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Default.wav; sourceTree = "<group>"; };
+		C6AC8D4520DD29A600FAC50F /* 968small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 968small.png; sourceTree = "<group>"; };
 		C6D1056A17F08536006498D6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6D88DEA17EC5D28006A0079 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +129,10 @@
 		C6126C7A17E9BFC600F065D8 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C61E69B2198190100031EE49 /* 968small-old.png */,
+				C6AC8D4520DD29A600FAC50F /* 968small.png */,
 				C6A3704E17EC344100ECE243 /* Beep-Low.wav */,
+				C6AC8D3F20DD25DB00FAC50F /* Default.wav */,
 				C6A3704F17EC344100ECE243 /* Beep-High.wav */,
 				C6126C8317E9BFC600F065D8 /* AppDelegate.h */,
 				C6126C8417E9BFC600F065D8 /* AppDelegate.m */,
@@ -134,7 +141,6 @@
 				C6126C8D17E9BFC600F065D8 /* ViewController.m */,
 				C6A3705317EC464800ECE243 /* SecondaryViewController.h */,
 				C6A3705417EC464800ECE243 /* SecondaryViewController.m */,
-				C6126CAC17E9DDD000F065D8 /* Default.wav */,
 				C6126C8F17E9BFC600F065D8 /* Images.xcassets */,
 				C6126C7B17E9BFC600F065D8 /* Supporting Files */,
 			);
@@ -215,20 +221,22 @@
 		C6126C6917E9BFC500F065D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Gerhard Wanner";
 				TargetAttributes = {
 					C6126C7017E9BFC500F065D8 = {
-						DevelopmentTeam = U5RNG295W2;
+						DevelopmentTeam = DH2QZ5L2JQ;
+						ProvisioningStyle = Automatic;
 					};
 					C6126C9417E9BFC600F065D8 = {
+						DevelopmentTeam = EGFL948U67;
 						TestTargetID = C6126C7017E9BFC500F065D8;
 					};
 				};
 			};
 			buildConfigurationList = C6126C6C17E9BFC500F065D8 /* Build configuration list for PBXProject "Challenge" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -252,11 +260,13 @@
 			files = (
 				C6A3705017EC344100ECE243 /* Beep-Low.wav in Resources */,
 				C6126C9017E9BFC600F065D8 /* Images.xcassets in Resources */,
-				C6126CAD17E9DDD000F065D8 /* Default.wav in Resources */,
 				C6126C8817E9BFC600F065D8 /* Main_iPhone.storyboard in Resources */,
 				C6126C7F17E9BFC600F065D8 /* InfoPlist.strings in Resources */,
+				C6AC8D4020DD25DB00FAC50F /* Default.wav in Resources */,
 				C6D1056B17F08536006498D6 /* Default-568h@2x.png in Resources */,
+				C6AC8D4620DD29A700FAC50F /* 968small.png in Resources */,
 				C6A3705117EC344100ECE243 /* Beep-High.wav in Resources */,
+				C61E69B3198190100031EE49 /* 968small-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,23 +342,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -361,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,30 +397,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -406,16 +445,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH2QZ5L2JQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Diavolezza.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,16 +466,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH2QZ5L2JQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Challenge/Challenge-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Diavolezza.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,8 +486,8 @@
 		C6126CAA17E9BFC600F065D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Challenge.app/Challenge";
+				DEVELOPMENT_TEAM = EGFL948U67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -455,6 +500,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ChallengeTests/ChallengeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Diavolezza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -464,8 +510,8 @@
 		C6126CAB17E9BFC600F065D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Challenge.app/Challenge";
+				DEVELOPMENT_TEAM = EGFL948U67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -474,6 +520,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Challenge/Challenge-Prefix.pch";
 				INFOPLIST_FILE = "ChallengeTests/ChallengeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Diavolezza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

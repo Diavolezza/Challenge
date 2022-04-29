@@ -20,6 +20,10 @@
     IBOutlet UIButton *boxButton;
     IBOutlet UIButton *incButton;
     IBOutlet UIButton *decButton;
+    IBOutlet UIButton *refPlusHButton;
+    IBOutlet UIButton *refMinusHButton;
+    IBOutlet UIButton *refPlusZButton;
+    IBOutlet UIButton *refMinusZButton;
 }
 
 @property(nonatomic, retain) IBOutlet UILabel *counter;
@@ -32,11 +36,19 @@
 @property(nonatomic, retain) IBOutlet UIButton *boxButton;
 @property(nonatomic, retain) IBOutlet UIButton *incButton;
 @property(nonatomic, retain) IBOutlet UIButton *decButton;
+@property(nonatomic, retain) IBOutlet UIButton *refPlusHButton;
+@property(nonatomic, retain) IBOutlet UIButton *refMinusHButton;
+@property(nonatomic, retain) IBOutlet UIButton *refPlusZButton;
+@property(nonatomic, retain) IBOutlet UIButton *refMinusZButton;
 
 -(IBAction)lap:(id)sender;
 -(IBAction)box:(id)sender;
 -(IBAction)reset:(id)sender;
 -(IBAction)inc:(id)sender;
 -(IBAction)dec:(id)sender;
+-(IBAction)refPlusH:(id)sender;
+-(IBAction)refMinusH:(id)sender;
+-(IBAction)refPlusZ:(id)sender;
+-(IBAction)refMinusZ:(id)sender;
 
 @end
