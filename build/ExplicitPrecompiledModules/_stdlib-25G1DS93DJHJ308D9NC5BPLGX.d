@@ -1,0 +1,34 @@
+moduledependenciestarget: \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/c_standard_library.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/os_availability.modulemap \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_availability_internal-AYSS7JYOOFEW51A2BVOIGY38W.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_availability-1WMAGDKZMY96C38JXNNS8Z9A8.pcm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/DarwinFoundation.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/module.modulemap \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/ptrcheck-21ZHT3GEOZ9YVEVE6O4ZAFYDZ.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_Builtin_stddef-E2YPF7NXLUD76Q5Z9AKCH4BR6.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_Builtin_stdarg-8V4XTCLVRWHOWWKS77KOI391Y.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/DarwinFoundation-4407AI04N8U1UG69W88VR0M8W.pcm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/DarwinBasic.modulemap \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/netinet_in-B000310QX0SY8BE8K6TI0CBCB.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_useconds_t-BSFA7NQW2SQ8GXVGXADJQ9YSZ.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_errno-A2IVU7UW7I96R2Z3EM67PVLNK.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_sys_select-BMA3NE76BM18XZSY2SHPU7ODD.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/sys_types-1TBS6L8X27Z63PEJHXTCF7XNO.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/mach-4WFI74401UH1974DDXRWNQZ91.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_signal-1LL4HV3XOT59H1JEPEN224CVV.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_stdint-8IA2LLKRUUTSF2VNMBEZ2UBQU.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_Builtin_stdint-9YU7FOW06A44MLUZTHXKOEITJ.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/sys_time-AMDN33SK7NWENIKIUEUZMJHC9.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/sys_resource-2KBBIZZKV2ECOG26N4DBJHNQZ.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/sys_wait-6TNIZG47VNOZJOPWQIPTNB3F4.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/alloca-31GM6VB8PWJ9GDI6790UP6JMA.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/runetype-B0MGK4M9D3QFRR2OOCPSR2ZV3.pcm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/malloc/_malloc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/sys/_types/_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/malloc/_malloc_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/malloc/_ptrcheck.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/ptrcheck.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/_abort.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/xlocale/_stdlib.h

@@ -1,0 +1,19 @@
+moduledependenciestarget: \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_availability-1WMAGDKZMY96C38JXNNS8Z9A8.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/TargetConditionals-8701296WBRTTU0ZPZ3TMX9SIP.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_stdio-5LZ813FUO8Z3DXG3CEN447MIV.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Foundation-2A4X7AMLX6GGLCXEXIRC4NZZF.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/CoreFoundation-6RG280O5QWXIQ0NM658D3IJ0I.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Dispatch-9JMH7E38PS24H44S8B9A80YGR.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_workgroup-6DH5MX9T1XZZE2NOUV5RXQU35.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Darwin-85JVBJDXF32P8WSAY5V5P8BN0.pcm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/Darwin.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/TargetConditionals.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/c_standard_library.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/dispatch.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/usr/include/os.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Modules/module.modulemap
