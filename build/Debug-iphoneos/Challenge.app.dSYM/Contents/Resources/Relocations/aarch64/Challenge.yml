@@ -1,0 +1,202 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/Debug-iphoneos/Challenge.app/Challenge'
+relocations:
+  - { offset: 0x65023, size: 0x8, addend: 0x0, symName: '-[ViewController alertView:clickedButtonAtIndex:]', symObjAddr: 0x0, symBinAddr: 0x100004000, symSize: 0x198 }
+  - { offset: 0x6503D, size: 0x8, addend: 0x0, symName: _mLap, symObjAddr: 0x2998, symBinAddr: 0x100011DE0, symSize: 0x0 }
+  - { offset: 0x6505A, size: 0x8, addend: 0x0, symName: _running, symObjAddr: 0xA600, symBinAddr: 0x10001C000, symSize: 0x0 }
+  - { offset: 0x65077, size: 0x8, addend: 0x0, symName: _inBox, symObjAddr: 0xA601, symBinAddr: 0x10001C001, symSize: 0x0 }
+  - { offset: 0x6508D, size: 0x8, addend: 0x0, symName: _refLapTimeInterval, symObjAddr: 0xA608, symBinAddr: 0x10001C008, symSize: 0x0 }
+  - { offset: 0x650AA, size: 0x8, addend: 0x0, symName: _ALERT_BOX, symObjAddr: 0x299C, symBinAddr: 0x10000C140, symSize: 0x0 }
+  - { offset: 0x650C5, size: 0x8, addend: 0x0, symName: _ALERT_RESET, symObjAddr: 0x29A0, symBinAddr: 0x10000C144, symSize: 0x0 }
+  - { offset: 0x650DB, size: 0x8, addend: 0x0, symName: _mClick, symObjAddr: 0xA610, symBinAddr: 0x10001C010, symSize: 0x0 }
+  - { offset: 0x650F8, size: 0x8, addend: 0x0, symName: _mBeepLow, symObjAddr: 0xA638, symBinAddr: 0x10001C038, symSize: 0x0 }
+  - { offset: 0x6510E, size: 0x8, addend: 0x0, symName: _mBeepHigh, symObjAddr: 0xA63C, symBinAddr: 0x10001C03C, symSize: 0x0 }
+  - { offset: 0x65124, size: 0x8, addend: 0x0, symName: _timer, symObjAddr: 0xA640, symBinAddr: 0x10001C040, symSize: 0x0 }
+  - { offset: 0x6513F, size: 0x8, addend: 0x0, symName: _startTime, symObjAddr: 0xA618, symBinAddr: 0x10001C018, symSize: 0x0 }
+  - { offset: 0x6515A, size: 0x8, addend: 0x0, symName: _startLapTime, symObjAddr: 0xA620, symBinAddr: 0x10001C020, symSize: 0x0 }
+  - { offset: 0x65170, size: 0x8, addend: 0x0, symName: _startRefTime, symObjAddr: 0xA630, symBinAddr: 0x10001C030, symSize: 0x0 }
+  - { offset: 0x65186, size: 0x8, addend: 0x0, symName: _endRefTime, symObjAddr: 0xA628, symBinAddr: 0x10001C028, symSize: 0x0 }
+  - { offset: 0x6530E, size: 0x8, addend: 0x0, symName: '-[ViewController alertView:clickedButtonAtIndex:]', symObjAddr: 0x0, symBinAddr: 0x100004000, symSize: 0x198 }
+  - { offset: 0x65361, size: 0x8, addend: 0x0, symName: '-[ViewController box:]', symObjAddr: 0x198, symBinAddr: 0x100004198, symSize: 0xE0 }
+  - { offset: 0x653B4, size: 0x8, addend: 0x0, symName: '-[ViewController dec:]', symObjAddr: 0x278, symBinAddr: 0x100004278, symSize: 0x90 }
+  - { offset: 0x653F8, size: 0x8, addend: 0x0, symName: '-[ViewController refPlusH:]', symObjAddr: 0x308, symBinAddr: 0x100004308, symSize: 0x80 }
+  - { offset: 0x6543C, size: 0x8, addend: 0x0, symName: '-[ViewController refMinusH:]', symObjAddr: 0x388, symBinAddr: 0x100004388, symSize: 0x80 }
+  - { offset: 0x65480, size: 0x8, addend: 0x0, symName: '-[ViewController refPlusZ:]', symObjAddr: 0x408, symBinAddr: 0x100004408, symSize: 0x80 }
+  - { offset: 0x654C4, size: 0x8, addend: 0x0, symName: '-[ViewController refMinusZ:]', symObjAddr: 0x488, symBinAddr: 0x100004488, symSize: 0x80 }
+  - { offset: 0x65508, size: 0x8, addend: 0x0, symName: '-[ViewController displayNewRefTime]', symObjAddr: 0x508, symBinAddr: 0x100004508, symSize: 0x6C }
+  - { offset: 0x6553D, size: 0x8, addend: 0x0, symName: '-[ViewController displayCounter]', symObjAddr: 0x574, symBinAddr: 0x100004574, symSize: 0xC4 }
+  - { offset: 0x65581, size: 0x8, addend: 0x0, symName: '-[ViewController displayLapTime]', symObjAddr: 0x638, symBinAddr: 0x100004638, symSize: 0x1DC }
+  - { offset: 0x65608, size: 0x8, addend: 0x0, symName: '-[ViewController displayLastLapTime]', symObjAddr: 0x814, symBinAddr: 0x100004814, symSize: 0x1DC }
+  - { offset: 0x6568F, size: 0x8, addend: 0x0, symName: '-[ViewController calculateRefTime]', symObjAddr: 0x9F0, symBinAddr: 0x1000049F0, symSize: 0x78 }
+  - { offset: 0x656C4, size: 0x8, addend: 0x0, symName: '-[ViewController displayRefTime]', symObjAddr: 0xA68, symBinAddr: 0x100004A68, symSize: 0x198 }
+  - { offset: 0x6572D, size: 0x8, addend: 0x0, symName: '-[ViewController displayTimerTimes]', symObjAddr: 0xC00, symBinAddr: 0x100004C00, symSize: 0x54 }
+  - { offset: 0x65762, size: 0x8, addend: 0x0, symName: '-[ViewController displayTotalTime]', symObjAddr: 0xC54, symBinAddr: 0x100004C54, symSize: 0x1DC }
+  - { offset: 0x657E9, size: 0x8, addend: 0x0, symName: '-[ViewController displayTargetLapTime]', symObjAddr: 0xE30, symBinAddr: 0x100004E30, symSize: 0x290 }
+  - { offset: 0x65870, size: 0x8, addend: 0x0, symName: '-[ViewController displayTargetTotalTime]', symObjAddr: 0x10C0, symBinAddr: 0x1000050C0, symSize: 0x580 }
+  - { offset: 0x658F9, size: 0x8, addend: 0x0, symName: '-[ViewController inc:]', symObjAddr: 0x1640, symBinAddr: 0x100005640, symSize: 0x90 }
+  - { offset: 0x6593F, size: 0x8, addend: 0x0, symName: '-[ViewController lap:]', symObjAddr: 0x16D0, symBinAddr: 0x1000056D0, symSize: 0x2BC }
+  - { offset: 0x65985, size: 0x8, addend: 0x0, symName: '-[ViewController reset:]', symObjAddr: 0x198C, symBinAddr: 0x10000598C, symSize: 0xD4 }
+  - { offset: 0x659DB, size: 0x8, addend: 0x0, symName: '-[ViewController reset]', symObjAddr: 0x1A60, symBinAddr: 0x100005A60, symSize: 0xBC }
+  - { offset: 0x65A11, size: 0x8, addend: 0x0, symName: '-[ViewController resetCounter]', symObjAddr: 0x1B1C, symBinAddr: 0x100005B1C, symSize: 0x48 }
+  - { offset: 0x65A47, size: 0x8, addend: 0x0, symName: '-[ViewController resetTimer]', symObjAddr: 0x1B64, symBinAddr: 0x100005B64, symSize: 0x118 }
+  - { offset: 0x65A7D, size: 0x8, addend: 0x0, symName: '-[ViewController viewDidLoad]', symObjAddr: 0x1C7C, symBinAddr: 0x100005C7C, symSize: 0x208 }
+  - { offset: 0x65AE3, size: 0x8, addend: 0x0, symName: '-[ViewController viewDidUnload]', symObjAddr: 0x1E84, symBinAddr: 0x100005E84, symSize: 0xB4 }
+  - { offset: 0x65B19, size: 0x8, addend: 0x0, symName: '-[ViewController didReceiveMemoryWarning]', symObjAddr: 0x1F38, symBinAddr: 0x100005F38, symSize: 0x54 }
+  - { offset: 0x65B4F, size: 0x8, addend: 0x0, symName: '-[ViewController viewDidLayoutSubviews]', symObjAddr: 0x1F8C, symBinAddr: 0x100005F8C, symSize: 0x2A0 }
+  - { offset: 0x65C8F, size: 0x8, addend: 0x0, symName: _CGRectMake, symObjAddr: 0x222C, symBinAddr: 0x10000622C, symSize: 0x4C }
+  - { offset: 0x65CFB, size: 0x8, addend: 0x0, symName: '-[ViewController counter]', symObjAddr: 0x2278, symBinAddr: 0x100006278, symSize: 0x24 }
+  - { offset: 0x65D34, size: 0x8, addend: 0x0, symName: '-[ViewController setCounter:]', symObjAddr: 0x229C, symBinAddr: 0x10000629C, symSize: 0x3C }
+  - { offset: 0x65D76, size: 0x8, addend: 0x0, symName: '-[ViewController totalTime]', symObjAddr: 0x22D8, symBinAddr: 0x1000062D8, symSize: 0x24 }
+  - { offset: 0x65DAF, size: 0x8, addend: 0x0, symName: '-[ViewController setTotalTime:]', symObjAddr: 0x22FC, symBinAddr: 0x1000062FC, symSize: 0x3C }
+  - { offset: 0x65DF1, size: 0x8, addend: 0x0, symName: '-[ViewController lapTime]', symObjAddr: 0x2338, symBinAddr: 0x100006338, symSize: 0x24 }
+  - { offset: 0x65E2A, size: 0x8, addend: 0x0, symName: '-[ViewController setLapTime:]', symObjAddr: 0x235C, symBinAddr: 0x10000635C, symSize: 0x3C }
+  - { offset: 0x65E6C, size: 0x8, addend: 0x0, symName: '-[ViewController lastLapTime]', symObjAddr: 0x2398, symBinAddr: 0x100006398, symSize: 0x24 }
+  - { offset: 0x65EA5, size: 0x8, addend: 0x0, symName: '-[ViewController setLastLapTime:]', symObjAddr: 0x23BC, symBinAddr: 0x1000063BC, symSize: 0x3C }
+  - { offset: 0x65EE7, size: 0x8, addend: 0x0, symName: '-[ViewController refLapTime]', symObjAddr: 0x23F8, symBinAddr: 0x1000063F8, symSize: 0x24 }
+  - { offset: 0x65F20, size: 0x8, addend: 0x0, symName: '-[ViewController setRefLapTime:]', symObjAddr: 0x241C, symBinAddr: 0x10000641C, symSize: 0x3C }
+  - { offset: 0x65F62, size: 0x8, addend: 0x0, symName: '-[ViewController targetLapTime]', symObjAddr: 0x2458, symBinAddr: 0x100006458, symSize: 0x24 }
+  - { offset: 0x65F9B, size: 0x8, addend: 0x0, symName: '-[ViewController setTargetLapTime:]', symObjAddr: 0x247C, symBinAddr: 0x10000647C, symSize: 0x3C }
+  - { offset: 0x65FDD, size: 0x8, addend: 0x0, symName: '-[ViewController targetTotalTime]', symObjAddr: 0x24B8, symBinAddr: 0x1000064B8, symSize: 0x24 }
+  - { offset: 0x66016, size: 0x8, addend: 0x0, symName: '-[ViewController setTargetTotalTime:]', symObjAddr: 0x24DC, symBinAddr: 0x1000064DC, symSize: 0x3C }
+  - { offset: 0x66058, size: 0x8, addend: 0x0, symName: '-[ViewController boxButton]', symObjAddr: 0x2518, symBinAddr: 0x100006518, symSize: 0x24 }
+  - { offset: 0x66091, size: 0x8, addend: 0x0, symName: '-[ViewController setBoxButton:]', symObjAddr: 0x253C, symBinAddr: 0x10000653C, symSize: 0x3C }
+  - { offset: 0x660D3, size: 0x8, addend: 0x0, symName: '-[ViewController incButton]', symObjAddr: 0x2578, symBinAddr: 0x100006578, symSize: 0x24 }
+  - { offset: 0x6610C, size: 0x8, addend: 0x0, symName: '-[ViewController setIncButton:]', symObjAddr: 0x259C, symBinAddr: 0x10000659C, symSize: 0x3C }
+  - { offset: 0x6614E, size: 0x8, addend: 0x0, symName: '-[ViewController decButton]', symObjAddr: 0x25D8, symBinAddr: 0x1000065D8, symSize: 0x24 }
+  - { offset: 0x66187, size: 0x8, addend: 0x0, symName: '-[ViewController setDecButton:]', symObjAddr: 0x25FC, symBinAddr: 0x1000065FC, symSize: 0x3C }
+  - { offset: 0x661C9, size: 0x8, addend: 0x0, symName: '-[ViewController refPlusHButton]', symObjAddr: 0x2638, symBinAddr: 0x100006638, symSize: 0x24 }
+  - { offset: 0x66202, size: 0x8, addend: 0x0, symName: '-[ViewController setRefPlusHButton:]', symObjAddr: 0x265C, symBinAddr: 0x10000665C, symSize: 0x3C }
+  - { offset: 0x66244, size: 0x8, addend: 0x0, symName: '-[ViewController refMinusHButton]', symObjAddr: 0x2698, symBinAddr: 0x100006698, symSize: 0x24 }
+  - { offset: 0x6627D, size: 0x8, addend: 0x0, symName: '-[ViewController setRefMinusHButton:]', symObjAddr: 0x26BC, symBinAddr: 0x1000066BC, symSize: 0x3C }
+  - { offset: 0x662BF, size: 0x8, addend: 0x0, symName: '-[ViewController refPlusZButton]', symObjAddr: 0x26F8, symBinAddr: 0x1000066F8, symSize: 0x24 }
+  - { offset: 0x662F8, size: 0x8, addend: 0x0, symName: '-[ViewController setRefPlusZButton:]', symObjAddr: 0x271C, symBinAddr: 0x10000671C, symSize: 0x3C }
+  - { offset: 0x6633A, size: 0x8, addend: 0x0, symName: '-[ViewController refMinusZButton]', symObjAddr: 0x2758, symBinAddr: 0x100006758, symSize: 0x24 }
+  - { offset: 0x66373, size: 0x8, addend: 0x0, symName: '-[ViewController setRefMinusZButton:]', symObjAddr: 0x277C, symBinAddr: 0x10000677C, symSize: 0x3C }
+  - { offset: 0x663B5, size: 0x8, addend: 0x0, symName: '-[ViewController .cxx_destruct]', symObjAddr: 0x27B8, symBinAddr: 0x1000067B8, symSize: 0x178 }
+  - { offset: 0x6648E, size: 0x8, addend: 0x0, symName: '-[AppDelegate application:didFinishLaunchingWithOptions:]', symObjAddr: 0x0, symBinAddr: 0x100006930, symSize: 0x88 }
+  - { offset: 0x664CC, size: 0x8, addend: 0x0, symName: '-[AppDelegate application:didFinishLaunchingWithOptions:]', symObjAddr: 0x0, symBinAddr: 0x100006930, symSize: 0x88 }
+  - { offset: 0x66523, size: 0x8, addend: 0x0, symName: '-[AppDelegate applicationWillResignActive:]', symObjAddr: 0x88, symBinAddr: 0x1000069B8, symSize: 0x5C }
+  - { offset: 0x66567, size: 0x8, addend: 0x0, symName: '-[AppDelegate applicationDidEnterBackground:]', symObjAddr: 0xE4, symBinAddr: 0x100006A14, symSize: 0x5C }
+  - { offset: 0x665AB, size: 0x8, addend: 0x0, symName: '-[AppDelegate applicationWillEnterForeground:]', symObjAddr: 0x140, symBinAddr: 0x100006A70, symSize: 0x5C }
+  - { offset: 0x665EF, size: 0x8, addend: 0x0, symName: '-[AppDelegate applicationDidBecomeActive:]', symObjAddr: 0x19C, symBinAddr: 0x100006ACC, symSize: 0x5C }
+  - { offset: 0x66633, size: 0x8, addend: 0x0, symName: '-[AppDelegate applicationWillTerminate:]', symObjAddr: 0x1F8, symBinAddr: 0x100006B28, symSize: 0x5C }
+  - { offset: 0x66677, size: 0x8, addend: 0x0, symName: '-[AppDelegate window]', symObjAddr: 0x254, symBinAddr: 0x100006B84, symSize: 0x24 }
+  - { offset: 0x666B0, size: 0x8, addend: 0x0, symName: '-[AppDelegate setWindow:]', symObjAddr: 0x278, symBinAddr: 0x100006BA8, symSize: 0x3C }
+  - { offset: 0x666F2, size: 0x8, addend: 0x0, symName: '-[AppDelegate .cxx_destruct]', symObjAddr: 0x2B4, symBinAddr: 0x100006BE4, symSize: 0x38 }
+  - { offset: 0x66791, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100006C1C, symSize: 0xA4 }
+  - { offset: 0x667AB, size: 0x8, addend: 0x0, symName: _REF_LAP, symObjAddr: 0xB0, symBinAddr: 0x100011EA8, symSize: 0x0 }
+  - { offset: 0x667C8, size: 0x8, addend: 0x0, symName: _TOTAL_LAP, symObjAddr: 0xB4, symBinAddr: 0x100011EAC, symSize: 0x0 }
+  - { offset: 0x667DE, size: 0x8, addend: 0x0, symName: _BOX_TIME, symObjAddr: 0xB8, symBinAddr: 0x100011EB0, symSize: 0x0 }
+  - { offset: 0x667E8, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100006C1C, symSize: 0xA4 }
+  - { offset: 0x6686E, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController settingsDone:]', symObjAddr: 0x0, symBinAddr: 0x100006CC0, symSize: 0x158 }
+  - { offset: 0x668DD, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController settingsDone:]', symObjAddr: 0x0, symBinAddr: 0x100006CC0, symSize: 0x158 }
+  - { offset: 0x66921, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController viewDidLoad]', symObjAddr: 0x158, symBinAddr: 0x100006E18, symSize: 0x180 }
+  - { offset: 0x66956, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController didReceiveMemoryWarning]', symObjAddr: 0x2D8, symBinAddr: 0x100006F98, symSize: 0x54 }
+  - { offset: 0x6698B, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController viewDidLayoutSubviews]', symObjAddr: 0x32C, symBinAddr: 0x100006FEC, symSize: 0x2A0 }
+  - { offset: 0x66ABC, size: 0x8, addend: 0x0, symName: _CGRectMake, symObjAddr: 0x5CC, symBinAddr: 0x10000728C, symSize: 0x4C }
+  - { offset: 0x66B28, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController laps]', symObjAddr: 0x618, symBinAddr: 0x1000072D8, symSize: 0x24 }
+  - { offset: 0x66B61, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController setLaps:]', symObjAddr: 0x63C, symBinAddr: 0x1000072FC, symSize: 0x3C }
+  - { offset: 0x66BA3, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController refLap]', symObjAddr: 0x678, symBinAddr: 0x100007338, symSize: 0x24 }
+  - { offset: 0x66BDC, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController setRefLap:]', symObjAddr: 0x69C, symBinAddr: 0x10000735C, symSize: 0x3C }
+  - { offset: 0x66C1E, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController boxTime]', symObjAddr: 0x6D8, symBinAddr: 0x100007398, symSize: 0x24 }
+  - { offset: 0x66C57, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController setBoxTime:]', symObjAddr: 0x6FC, symBinAddr: 0x1000073BC, symSize: 0x3C }
+  - { offset: 0x66C99, size: 0x8, addend: 0x0, symName: '-[SecondaryViewController .cxx_destruct]', symObjAddr: 0x738, symBinAddr: 0x1000073F8, symSize: 0x70 }
+  - { offset: 0x66D68, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_magic, symObjAddr: 0x28, symBinAddr: 0x100007468, symSize: 0x14 }
+  - { offset: 0x66D7A, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_num_padding_bytes, symObjAddr: 0x44, symBinAddr: 0x10000747C, symSize: 0xC }
+  - { offset: 0x66D8C, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_version, symObjAddr: 0x50, symBinAddr: 0x100007488, symSize: 0xC }
+  - { offset: 0x66DCF, size: 0x8, addend: 0x0, symName: _lprofProfileDumped, symObjAddr: 0x0, symBinAddr: 0x100007494, symSize: 0xC }
+  - { offset: 0x66DDD, size: 0x8, addend: 0x0, symName: _lprofProfileDumped, symObjAddr: 0x0, symBinAddr: 0x100007494, symSize: 0xC }
+  - { offset: 0x66E19, size: 0x8, addend: 0x0, symName: _getValueProfRecordHeaderSize, symObjAddr: 0x0, symBinAddr: 0x1000074A0, symSize: 0xC }
+  - { offset: 0x66E27, size: 0x8, addend: 0x0, symName: _getValueProfRecordHeaderSize, symObjAddr: 0x0, symBinAddr: 0x1000074A0, symSize: 0xC }
+  - { offset: 0x66E40, size: 0x8, addend: 0x0, symName: _getValueProfRecordValueData, symObjAddr: 0x1C, symBinAddr: 0x1000074AC, symSize: 0x14 }
+  - { offset: 0x66E77, size: 0x8, addend: 0x0, symName: _getValueProfRecordNext, symObjAddr: 0x17C, symBinAddr: 0x1000074C0, symSize: 0x168 }
+  - { offset: 0x66EB5, size: 0x8, addend: 0x0, symName: _getFirstValueProfRecord, symObjAddr: 0x2E4, symBinAddr: 0x100007628, symSize: 0x8 }
+  - { offset: 0x66EE3, size: 0x8, addend: 0x0, symName: _lprofSetupValueProfiler, symObjAddr: 0xA40, symBinAddr: 0x100007630, symSize: 0x68 }
+  - { offset: 0x66F4F, size: 0x8, addend: 0x0, symName: ___llvm_profile_instrument_target_value, symObjAddr: 0xD80, symBinAddr: 0x100007698, symSize: 0x2CC }
+  - { offset: 0x66FC3, size: 0x8, addend: 0x0, symName: _lprofGetVPDataReader, symObjAddr: 0x1084, symBinAddr: 0x100007964, symSize: 0xC }
+  - { offset: 0x66FD5, size: 0x8, addend: 0x0, symName: _initializeValueProfRuntimeRecord, symObjAddr: 0x1090, symBinAddr: 0x100007970, symSize: 0x210 }
+  - { offset: 0x66FEE, size: 0x8, addend: 0x0, symName: _getNumValueDataForSiteWrapper, symObjAddr: 0x12A0, symBinAddr: 0x100007B80, symSize: 0x14 }
+  - { offset: 0x67004, size: 0x8, addend: 0x0, symName: _getNumValueDataForSiteWrapper, symObjAddr: 0x12A0, symBinAddr: 0x100007B80, symSize: 0x14 }
+  - { offset: 0x67017, size: 0x8, addend: 0x0, symName: _getValueProfDataSizeWrapper, symObjAddr: 0x12B4, symBinAddr: 0x100007B94, symSize: 0xE0 }
+  - { offset: 0x670B8, size: 0x8, addend: 0x0, symName: _getNumValueSitesRT, symObjAddr: 0x13D0, symBinAddr: 0x100007CB0, symSize: 0x10 }
+  - { offset: 0x670CA, size: 0x8, addend: 0x0, symName: _getNumValueDataRT, symObjAddr: 0x13E0, symBinAddr: 0x100007CC0, symSize: 0x154 }
+  - { offset: 0x670DC, size: 0x8, addend: 0x0, symName: _getNextNValueData, symObjAddr: 0x1394, symBinAddr: 0x100007C74, symSize: 0x3C }
+  - { offset: 0x67118, size: 0x8, addend: 0x0, symName: ___llvm_profile_is_continuous_mode_enabled, symObjAddr: 0x0, symBinAddr: 0x100007E14, symSize: 0x1C }
+  - { offset: 0x67126, size: 0x8, addend: 0x0, symName: ___llvm_profile_is_continuous_mode_enabled, symObjAddr: 0x0, symBinAddr: 0x100007E14, symSize: 0x1C }
+  - { offset: 0x67138, size: 0x8, addend: 0x0, symName: ___llvm_profile_enable_continuous_mode, symObjAddr: 0x1C, symBinAddr: 0x100007E30, symSize: 0x10 }
+  - { offset: 0x6714A, size: 0x8, addend: 0x0, symName: ___llvm_profile_disable_continuous_mode, symObjAddr: 0x2C, symBinAddr: 0x100007E40, symSize: 0xC }
+  - { offset: 0x6715C, size: 0x8, addend: 0x0, symName: ___llvm_profile_set_page_size, symObjAddr: 0x38, symBinAddr: 0x100007E4C, symSize: 0xC }
+  - { offset: 0x6716E, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_size_for_buffer, symObjAddr: 0x44, symBinAddr: 0x100007E58, symSize: 0xC8 }
+  - { offset: 0x6726B, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_size_for_buffer_internal, symObjAddr: 0x10C, symBinAddr: 0x100007F20, symSize: 0x1C8 }
+  - { offset: 0x674D2, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_num_data, symObjAddr: 0x2D4, symBinAddr: 0x1000080E8, symSize: 0x10 }
+  - { offset: 0x674E4, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_data_size, symObjAddr: 0x2E4, symBinAddr: 0x1000080F8, symSize: 0x10 }
+  - { offset: 0x674FA, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_data_size, symObjAddr: 0x2E4, symBinAddr: 0x1000080F8, symSize: 0x10 }
+  - { offset: 0x6750C, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_num_vtable, symObjAddr: 0x2F4, symBinAddr: 0x100008108, symSize: 0x18 }
+  - { offset: 0x6751E, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_vtable_section_size, symObjAddr: 0x30C, symBinAddr: 0x100008120, symSize: 0x8 }
+  - { offset: 0x67530, size: 0x8, addend: 0x0, symName: ___llvm_profile_counter_entry_size, symObjAddr: 0x314, symBinAddr: 0x100008128, symSize: 0x20 }
+  - { offset: 0x67551, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_num_counters, symObjAddr: 0x334, symBinAddr: 0x100008148, symSize: 0x4C }
+  - { offset: 0x675AA, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_counters_size, symObjAddr: 0x380, symBinAddr: 0x100008194, symSize: 0x5C }
+  - { offset: 0x6763C, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_num_bitmap_bytes, symObjAddr: 0x3DC, symBinAddr: 0x1000081F0, symSize: 0x8 }
+  - { offset: 0x6764E, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_name_size, symObjAddr: 0x3E4, symBinAddr: 0x1000081F8, symSize: 0x8 }
+  - { offset: 0x67660, size: 0x8, addend: 0x0, symName: ___llvm_profile_get_padding_sizes_for_counters, symObjAddr: 0x3EC, symBinAddr: 0x100008200, symSize: 0x160 }
+  - { offset: 0x67738, size: 0x8, addend: 0x0, symName: _initBufferWriter, symObjAddr: 0x54C, symBinAddr: 0x100008360, symSize: 0x10 }
+  - { offset: 0x67798, size: 0x8, addend: 0x0, symName: _getCurFilenameLength, symObjAddr: 0x1C0, symBinAddr: 0x100008370, symSize: 0x338 }
+  - { offset: 0x677E3, size: 0x8, addend: 0x0, symName: _getCurFilename, symObjAddr: 0x4F8, symBinAddr: 0x1000086A8, symSize: 0x338 }
+  - { offset: 0x678E7, size: 0x8, addend: 0x0, symName: _parseAndSetFilename, symObjAddr: 0x938, symBinAddr: 0x1000089E0, symSize: 0x580 }
+  - { offset: 0x67B57, size: 0x8, addend: 0x0, symName: _truncateCurrentFile, symObjAddr: 0x1E4C, symBinAddr: 0x1000099DC, symSize: 0xCC }
+  - { offset: 0x67BCC, size: 0x8, addend: 0x0, symName: _initializeProfileForContinuousMode, symObjAddr: 0x1F18, symBinAddr: 0x100009AA8, symSize: 0x250 }
+  - { offset: 0x67DE5, size: 0x8, addend: 0x0, symName: ___llvm_profile_initialize, symObjAddr: 0xEB8, symBinAddr: 0x100008F60, symSize: 0xBC }
+  - { offset: 0x67EA3, size: 0x8, addend: 0x0, symName: ___llvm_profile_write_file, symObjAddr: 0xFF8, symBinAddr: 0x10000901C, symSize: 0x1B0 }
+  - { offset: 0x67F7C, size: 0x8, addend: 0x0, symName: _writeFile, symObjAddr: 0x11A8, symBinAddr: 0x1000091CC, symSize: 0x29C }
+  - { offset: 0x6822E, size: 0x8, addend: 0x0, symName: _createProfileDir, symObjAddr: 0x2168, symBinAddr: 0x100009CF8, symSize: 0x88 }
+  - { offset: 0x68273, size: 0x8, addend: 0x0, symName: _getProfileFileSizeForMerging, symObjAddr: 0x18DC, symBinAddr: 0x10000946C, symSize: 0x114 }
+  - { offset: 0x68304, size: 0x8, addend: 0x0, symName: _mmapProfileForMerging, symObjAddr: 0x19F0, symBinAddr: 0x100009580, symSize: 0xC0 }
+  - { offset: 0x683C4, size: 0x8, addend: 0x0, symName: _writeFileWithoutReturn, symObjAddr: 0x16F0, symBinAddr: 0x100009468, symSize: 0x4 }
+  - { offset: 0x683DA, size: 0x8, addend: 0x0, symName: _writeFileWithoutReturn, symObjAddr: 0x16F0, symBinAddr: 0x100009468, symSize: 0x4 }
+  - { offset: 0x683EC, size: 0x8, addend: 0x0, symName: _mmapForContinuousMode, symObjAddr: 0x1AB0, symBinAddr: 0x100009640, symSize: 0x260 }
+  - { offset: 0x685A1, size: 0x8, addend: 0x0, symName: _fileWriter, symObjAddr: 0x1D10, symBinAddr: 0x1000098A0, symSize: 0x13C }
+  - { offset: 0x685FD, size: 0x8, addend: 0x0, symName: _exitSignalHandler, symObjAddr: 0x21F0, symBinAddr: 0x100009D80, symSize: 0x10 }
+  - { offset: 0x68650, size: 0x8, addend: 0x0, symName: _lprofGetLoadModuleSignature, symObjAddr: 0x0, symBinAddr: 0x100009D90, symSize: 0xD4 }
+  - { offset: 0x6865E, size: 0x8, addend: 0x0, symName: _lprofGetLoadModuleSignature, symObjAddr: 0x0, symBinAddr: 0x100009D90, symSize: 0xD4 }
+  - { offset: 0x6875D, size: 0x8, addend: 0x0, symName: ___llvm_profile_check_compatibility, symObjAddr: 0xD4, symBinAddr: 0x100009E64, symSize: 0x1D8 }
+  - { offset: 0x68882, size: 0x8, addend: 0x0, symName: ___llvm_profile_merge_from_buffer, symObjAddr: 0x2AC, symBinAddr: 0x10000A03C, symSize: 0x4A4 }
+  - { offset: 0x689C2, size: 0x8, addend: 0x0, symName: _lprofMergeValueProfData, symObjAddr: 0x0, symBinAddr: 0x10000A4E0, symSize: 0xF4 }
+  - { offset: 0x689D0, size: 0x8, addend: 0x0, symName: _lprofMergeValueProfData, symObjAddr: 0x0, symBinAddr: 0x10000A4E0, symSize: 0xF4 }
+  - { offset: 0x68A68, size: 0x8, addend: 0x0, symName: _lprofBufferWriter, symObjAddr: 0x0, symBinAddr: 0x10000A5D4, symSize: 0x70 }
+  - { offset: 0x68A76, size: 0x8, addend: 0x0, symName: _lprofBufferWriter, symObjAddr: 0x0, symBinAddr: 0x10000A5D4, symSize: 0x70 }
+  - { offset: 0x68A9D, size: 0x8, addend: 0x0, symName: _lprofBufferIOWrite, symObjAddr: 0x108, symBinAddr: 0x10000A644, symSize: 0x13C }
+  - { offset: 0x68B08, size: 0x8, addend: 0x0, symName: _lprofWriteData, symObjAddr: 0x308, symBinAddr: 0x10000A780, symSize: 0xD8 }
+  - { offset: 0x68C05, size: 0x8, addend: 0x0, symName: _lprofWriteDataImpl, symObjAddr: 0x3E0, symBinAddr: 0x10000A858, symSize: 0x320 }
+  - { offset: 0x68D0E, size: 0x8, addend: 0x0, symName: _createHeader, symObjAddr: 0x700, symBinAddr: 0x10000AB78, symSize: 0x1A4 }
+  - { offset: 0x68DF0, size: 0x8, addend: 0x0, symName: _writeValueProfData, symObjAddr: 0x8A4, symBinAddr: 0x10000AD1C, symSize: 0x15C }
+  - { offset: 0x68EAA, size: 0x8, addend: 0x0, symName: _writeOneValueProfData, symObjAddr: 0x105C, symBinAddr: 0x10000AE78, symSize: 0x47C }
+  - { offset: 0x69033, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_data, symObjAddr: 0x0, symBinAddr: 0x10000B2F4, symSize: 0xC }
+  - { offset: 0x69041, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_data, symObjAddr: 0x0, symBinAddr: 0x10000B2F4, symSize: 0xC }
+  - { offset: 0x69053, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_data, symObjAddr: 0xC, symBinAddr: 0x10000B300, symSize: 0xC }
+  - { offset: 0x69065, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_names, symObjAddr: 0x18, symBinAddr: 0x10000B30C, symSize: 0xC }
+  - { offset: 0x69077, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_names, symObjAddr: 0x24, symBinAddr: 0x10000B318, symSize: 0xC }
+  - { offset: 0x69089, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_counters, symObjAddr: 0x30, symBinAddr: 0x10000B324, symSize: 0xC }
+  - { offset: 0x6909B, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_counters, symObjAddr: 0x3C, symBinAddr: 0x10000B330, symSize: 0xC }
+  - { offset: 0x690AD, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_bitmap, symObjAddr: 0x48, symBinAddr: 0x10000B33C, symSize: 0xC }
+  - { offset: 0x690BF, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_bitmap, symObjAddr: 0x54, symBinAddr: 0x10000B348, symSize: 0xC }
+  - { offset: 0x690D1, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_vtables, symObjAddr: 0x60, symBinAddr: 0x10000B354, symSize: 0xC }
+  - { offset: 0x690E3, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_vtables, symObjAddr: 0x6C, symBinAddr: 0x10000B360, symSize: 0xC }
+  - { offset: 0x690F5, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_vtabnames, symObjAddr: 0x78, symBinAddr: 0x10000B36C, symSize: 0xC }
+  - { offset: 0x69107, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_vtabnames, symObjAddr: 0x84, symBinAddr: 0x10000B378, symSize: 0xC }
+  - { offset: 0x69119, size: 0x8, addend: 0x0, symName: ___llvm_profile_begin_vnodes, symObjAddr: 0x9C, symBinAddr: 0x10000B384, symSize: 0xC }
+  - { offset: 0x6912B, size: 0x8, addend: 0x0, symName: ___llvm_profile_end_vnodes, symObjAddr: 0xA8, symBinAddr: 0x10000B390, symSize: 0xC }
+  - { offset: 0x6913D, size: 0x8, addend: 0x0, symName: ___llvm_write_binary_ids, symObjAddr: 0xB4, symBinAddr: 0x10000B39C, symSize: 0x8 }
+  - { offset: 0x69179, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_InstrProfilingRuntime.cpp, symObjAddr: 0x0, symBinAddr: 0x10000B3A4, symSize: 0x1C }
+  - { offset: 0x69195, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_InstrProfilingRuntime.cpp, symObjAddr: 0x0, symBinAddr: 0x10000B3A4, symSize: 0x1C }
+  - { offset: 0x6920E, size: 0x8, addend: 0x0, symName: ___llvm_profile_recursive_mkdir, symObjAddr: 0x0, symBinAddr: 0x10000B3C0, symSize: 0x5C }
+  - { offset: 0x69223, size: 0x8, addend: 0x0, symName: ___llvm_profile_recursive_mkdir, symObjAddr: 0x0, symBinAddr: 0x10000B3C0, symSize: 0x5C }
+  - { offset: 0x69262, size: 0x8, addend: 0x0, symName: _lprofGetHostName, symObjAddr: 0x74, symBinAddr: 0x10000B41C, symSize: 0x80 }
+  - { offset: 0x692AC, size: 0x8, addend: 0x0, symName: _lprofLockFileHandle, symObjAddr: 0x214, symBinAddr: 0x10000B49C, symSize: 0x94 }
+  - { offset: 0x6932A, size: 0x8, addend: 0x0, symName: _lprofUnlockFileHandle, symObjAddr: 0x2A8, symBinAddr: 0x10000B530, symSize: 0x94 }
+  - { offset: 0x69398, size: 0x8, addend: 0x0, symName: _lprofOpenFileEx, symObjAddr: 0x33C, symBinAddr: 0x10000B5C4, symSize: 0xD4 }
+  - { offset: 0x6943D, size: 0x8, addend: 0x0, symName: _lprofFindFirstDirSeparator, symObjAddr: 0x554, symBinAddr: 0x10000B698, symSize: 0x8 }
+  - { offset: 0x69466, size: 0x8, addend: 0x0, symName: _lprofInstallSignalHandler, symObjAddr: 0x564, symBinAddr: 0x10000B6A0, symSize: 0x58 }
+  - { offset: 0x6949D, size: 0x8, addend: 0x0, symName: _lprofSuspendSigKill, symObjAddr: 0x5BC, symBinAddr: 0x10000B6F8, symSize: 0x8 }
+  - { offset: 0x694AF, size: 0x8, addend: 0x0, symName: _lprofRestoreSigKill, symObjAddr: 0x5C4, symBinAddr: 0x10000B700, symSize: 0x4 }
+...

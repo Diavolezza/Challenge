@@ -1,0 +1,19 @@
+moduledependenciestarget: \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_availability-5EG3A6KE01KF5HGIXBM8898YB.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/TargetConditionals-802AF8UKT9QJNKT8W8B6DCECY.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/_stdio-DVW6TN46D7E1IT7VXSRJLOHU0.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Foundation-20U8WFPSCLRPKB04XWBZIJZLI.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/CoreFoundation-612U2HHOH80Y373R0SH371Z8V.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Dispatch-C6R37D9CLIXXUX4NZ5I750J9O.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/os_workgroup-8Q9T2DIIFBMUIJ5DAQMPONN8Q.pcm \
+  /Users/wanner/Nextcloud/geri/iOS_Dev/Challenge/build/ExplicitPrecompiledModules/Darwin-2R9FDKA2KSOOTBAAEFZOEF4O1.pcm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/Darwin.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/os_availability.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/TargetConditionals.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/c_standard_library.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/dispatch.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/usr/include/os.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Modules/module.modulemap
