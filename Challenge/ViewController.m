@@ -397,4 +397,39 @@ const int ALERT_RESET = 1;
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+    // Design-Größe (iPad-Portrait)
+    CGFloat designWidth = 768.0;
+    CGFloat designHeight = 1024.0;
+
+    // Tatsächliche Bildschirmgröße
+    CGSize screenSize = self.view.bounds.size; // Das ist *aktuelle Ausrichtung*
+    CGFloat screenWidth = screenSize.width;
+    CGFloat screenHeight = screenSize.height;
+
+    if (round(screenWidth) != round(designWidth)) {
+        // Einheitliche Skalierung berechnen
+        CGFloat scaleX = screenWidth / designWidth;
+        CGFloat scaleY = screenHeight / designHeight;
+        CGFloat scale = MIN(scaleX, scaleY); // damit nichts rausfällt
+
+        // Skalierung anwenden
+        self.view.transform = CGAffineTransformMakeScale(scale, scale);
+
+        // Nach Skalierung: neue Größe
+        CGFloat scaledWidth = designWidth * scale;
+        CGFloat scaledHeight = designHeight * scale;
+
+        // Differenz berechnen, um zu zentrieren
+        CGFloat dx = (screenWidth - scaledWidth) / 2.0;
+        CGFloat dy = (screenHeight - scaledHeight) / 2.0;
+
+        // Frame verschieben zur Zentrierung
+        self.view.frame = CGRectMake(dx, dy, scaledWidth, scaledHeight);
+    }
+
+}
+
 @end
