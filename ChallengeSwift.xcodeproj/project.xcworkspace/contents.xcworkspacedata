@@ -3,8 +3,5 @@
    version = "1.0">
    <FileRef
       location = "group:ChallengeSwift.xcodeproj">
-      <FileRef
-         location = "group:">
-      </FileRef>
    </FileRef>
 </Workspace>
