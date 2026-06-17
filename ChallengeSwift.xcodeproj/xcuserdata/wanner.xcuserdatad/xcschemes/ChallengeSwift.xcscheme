@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838A412A265746070089E52B"
+               BlueprintIdentifier = "A1000000000000011"
                BuildableName = "ChallengeSwift.app"
                BlueprintName = "ChallengeSwift"
                ReferencedContainer = "container:ChallengeSwift.xcodeproj">
@@ -45,7 +45,7 @@
             runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838A412A265746070089E52B"
+               BlueprintIdentifier = "A1000000000000011"
                BuildableName = "ChallengeSwift.app"
                BlueprintName = "ChallengeSwift"
                ReferencedContainer = "container:ChallengeSwift.xcodeproj">
@@ -68,7 +68,7 @@
             runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838A412A265746070089E52B"
+               BlueprintIdentifier = "A1000000000000011"
                BuildableName = "ChallengeSwift.app"
                BlueprintName = "ChallengeSwift"
                ReferencedContainer = "container:ChallengeSwift.xcodeproj">
