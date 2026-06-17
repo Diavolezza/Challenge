@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Archive version="1">
+	<Objects>
+		<Dictionary key="root">
+			<Dictionary key="UIState">
+				<Integer key="PBXWorkspaceIntegrationState" value="1"/>
+			</Dictionary>
+		</Dictionary>
+	</Objects>
+	<Version>1</Version>
+</Archive>

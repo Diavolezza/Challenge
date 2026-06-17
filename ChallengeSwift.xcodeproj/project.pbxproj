@@ -6,40 +6,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0123456789ABCDEF0123456789ABCDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE0 /* AppDelegate.swift */; };
-		0123456789ABCDEF0123456789ABCDEF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE1 /* ViewController.swift */; };
-		0123456789ABCDEF0123456789ABCDEF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE2 /* SettingsViewController.swift */; };
-		0123456789ABCDEF0123456789ABCDEF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE3 /* Constants.swift */; };
-		0123456789ABCDEF0123456789ABCDEF4 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE4 /* SoundManager.swift */; };
-		0123456789ABCDEF0123456789ABCDEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE5 /* SceneDelegate.swift */; };
-		0123456789ABCDEF0123456789ABCDEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE6 /* Main.storyboard */; };
-		0123456789ABCDEF0123456789ABCDEF7 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE7 /* Default.wav */; };
-		0123456789ABCDEF0123456789ABCDEF8 /* Beep-Low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE8 /* Beep-Low.wav */; };
-		0123456789ABCDEF0123456789ABCDEF9 /* Beep-High.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDE9 /* Beep-High.wav */; };
-		0123456789ABCDEF0123456789ABCDEFA /* Laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDEFA /* Laser.wav */; };
-		0123456789ABCDEF0123456789ABCDEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0123456789ABCDEF0123456789ABCDEFB /* Images.xcassets */; };
+		A1234567890BCDEF1234567890ABCDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE0 /* AppDelegate.swift */; };
+		A1234567890BCDEF1234567890ABCDEF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE1 /* ViewController.swift */; };
+		A1234567890BCDEF1234567890ABCDEF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE2 /* SettingsViewController.swift */; };
+		A1234567890BCDEF1234567890ABCDEF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE3 /* Constants.swift */; };
+		A1234567890BCDEF1234567890ABCDEF4 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE4 /* SoundManager.swift */; };
+		A1234567890BCDEF1234567890ABCDEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE5 /* SceneDelegate.swift */; };
+		A1234567890BCDEF1234567890ABCDEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE6 /* Main.storyboard */; };
+		A1234567890BCDEF1234567890ABCDEF7 /* Default.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE7 /* Default.wav */; };
+		A1234567890BCDEF1234567890ABCDEF8 /* Beep-Low.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE8 /* Beep-Low.wav */; };
+		A1234567890BCDEF1234567890ABCDEF9 /* Beep-High.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDE9 /* Beep-High.wav */; };
+		A1234567890BCDEF1234567890ABCDEFA /* Laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDEFA /* Laser.wav */; };
+		A1234567890BCDEF1234567890ABCDEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDEFB /* Images.xcassets */; };
+		A1234567890BCDEF1234567890ABCDEFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890BCDEF1234567890ABCDEFC /* Info.plist */; };
 
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0123456789ABCDEF0123456789ABCDE0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE4 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE7 /* Default.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; path = Default.wav; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE8 /* Beep-Low.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; path = "Beep-Low.wav"; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDE9 /* Beep-High.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; path = "Beep-High.wav"; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDEFA /* Laser.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; path = Laser.wav; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDEFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceRoot = SOURCE_ROOT; };
-		0123456789ABCDEF0123456789ABCDEFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ChallengeSwift/AppDelegate.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ChallengeSwift/ViewController.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ChallengeSwift/SettingsViewController.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ChallengeSwift/Constants.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE4 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundManager.swift; path = ChallengeSwift/SoundManager.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ChallengeSwift/SceneDelegate.swift; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ChallengeSwift/Base.lproj/Main.storyboard; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE7 /* Default.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; name = Default.wav; path = ChallengeSwift/Default.wav; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE8 /* Beep-Low.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; name = "Beep-Low.wav"; path = ChallengeSwift/"Beep-Low.wav"; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDE9 /* Beep-High.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; name = "Beep-High.wav"; path = ChallengeSwift/"Beep-High.wav"; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDEFA /* Laser.wav */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = audio.wav; name = Laser.wav; path = ChallengeSwift/Laser.wav; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDEFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ChallengeSwift/Images.xcassets; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDEFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChallengeSwift/Info.plist; sourceRoot = SOURCE_ROOT; };
+		A1234567890BCDEF1234567890ABCDEF00 /* ChallengeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeSwift.app; sourceRoot = BUILT_PRODUCTS_DIR; };
 
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0123456789ABCDEF0123456789ABCDEF00 /* Frameworks */ = {
+		A1234567890BCDEF1234567890ABCDEF000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,37 +52,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0123456789ABCDEF0123456789ABCDEF000 /* ChallengeSwift */ = {
+		A1234567890BCDEF1234567890ABCDEF0000 /* ChallengeSwift */ = {
 			isa = PBXGroup;
 			children = (
-				0123456789ABCDEF0123456789ABCDE0 /* AppDelegate.swift */,
-				0123456789ABCDEF0123456789ABCDE1 /* ViewController.swift */,
-				0123456789ABCDEF0123456789ABCDE2 /* SettingsViewController.swift */,
-				0123456789ABCDEF0123456789ABCDE3 /* Constants.swift */,
-				0123456789ABCDEF0123456789ABCDE4 /* SoundManager.swift */,
-				0123456789ABCDEF0123456789ABCDE5 /* SceneDelegate.swift */,
-				0123456789ABCDEF0123456789ABCDEFB /* Images.xcassets */,
-				0123456789ABCDEF0123456789ABCDE6 /* Main.storyboard */,
-				0123456789ABCDEF0123456789ABCDE7 /* Default.wav */,
-				0123456789ABCDEF0123456789ABCDE8 /* Beep-Low.wav */,
-				0123456789ABCDEF0123456789ABCDE9 /* Beep-High.wav */,
-				0123456789ABCDEF0123456789ABCDEFA /* Laser.wav */,
-				0123456789ABCDEF0123456789ABCDEFC /* Info.plist */,
+				A1234567890BCDEF1234567890ABCDE0 /* AppDelegate.swift */,
+				A1234567890BCDEF1234567890ABCDE1 /* ViewController.swift */,
+				A1234567890BCDEF1234567890ABCDE2 /* SettingsViewController.swift */,
+				A1234567890BCDEF1234567890ABCDE3 /* Constants.swift */,
+				A1234567890BCDEF1234567890ABCDE4 /* SoundManager.swift */,
+				A1234567890BCDEF1234567890ABCDE5 /* SceneDelegate.swift */,
+				A1234567890BCDEF1234567890ABCDEFB /* Images.xcassets */,
+				A1234567890BCDEF1234567890ABCDE6 /* Main.storyboard */,
+				A1234567890BCDEF1234567890ABCDE7 /* Default.wav */,
+				A1234567890BCDEF1234567890ABCDE8 /* Beep-Low.wav */,
+				A1234567890BCDEF1234567890ABCDE9 /* Beep-High.wav */,
+				A1234567890BCDEF1234567890ABCDEFA /* Laser.wav */,
+				A1234567890BCDEF1234567890ABCDEFC /* Info.plist */,
+				A1234567890BCDEF1234567890ABCDEF000 /* Products */,
 			);
 			name = ChallengeSwift;
+			sourceTree = "<group>";
+		};
+		A1234567890BCDEF1234567890ABCDEF000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890BCDEF1234567890ABCDEF00 /* ChallengeSwift.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0123456789ABCDEF0123456789ABCDEF0000 /* ChallengeSwift */ = {
+		A1234567890BCDEF1234567890ABCDEF00000 /* ChallengeSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0123456789ABCDEF0123456789ABCDEF0001 /* Build configuration list for PBXNativeTarget "ChallengeSwift" */;
+			buildConfigurationList = A1234567890BCDEF1234567890ABCDEF0001 /* Build configuration list for PBXNativeTarget "ChallengeSwift" */;
 			buildPhases = (
-				0123456789ABCDEF0123456789ABCDEF00 /* Frameworks */,
-				0123456789ABCDEF0123456789ABCDEF01 /* Sources */,
-				0123456789ABCDEF0123456789ABCDEF02 /* Resources */,
+				A1234567890BCDEF1234567890ABCDEF000 /* Frameworks */,
+				A1234567890BCDEF1234567890ABCDEF001 /* Sources */,
+				A1234567890BCDEF1234567890ABCDEF002 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -88,25 +99,26 @@
 			);
 			name = ChallengeSwift;
 			productName = ChallengeSwift;
-			productReference = 0123456789ABCDEF0123456789ABCDEF0002 /* ChallengeSwift.app */;
+			productReference = A1234567890BCDEF1234567890ABCDEF00 /* ChallengeSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0123456789ABCDEF0123456789ABCDEF00000 /* Project object */ = {
+		A1234567890BCDEF1234567890ABCDEF000000 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
-					0123456789ABCDEF0123456789ABCDEF0000 = {
-						CreatedOnToolsVersion = 12.0;
+					A1234567890BCDEF1234567890ABCDEF00000 = {
+						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = 0123456789ABCDEF0123456789ABCDEF0003 /* Build configuration list for PBXProject "ChallengeSwift" */;
-			compatibilityVersion = "Xcode 12.0";
+			buildConfigurationList = A1234567890BCDEF1234567890ABCDEF0003 /* Build configuration list for PBXProject "ChallengeSwift" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -114,28 +126,29 @@
 				en,
 				fr,
 			);
-			mainGroup = 0123456789ABCDEF0123456789ABCDEF000 /* ChallengeSwift */;
-			productRefGroup = /* Products */;
+			mainGroup = A1234567890BCDEF1234567890ABCDEF0000 /* ChallengeSwift */;
+			productRefGroup = A1234567890BCDEF1234567890ABCDEF000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0123456789ABCDEF0123456789ABCDEF0000 /* ChallengeSwift */,
+				A1234567890BCDEF1234567890ABCDEF00000 /* ChallengeSwift */,
 			);
 		};
 
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0123456789ABCDEF0123456789ABCDEF02 /* Resources */ = {
+		A1234567890BCDEF1234567890ABCDEF002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0123456789ABCDEF0123456789ABCDEF6 /* Main.storyboard in Resources */,
-				0123456789ABCDEF0123456789ABCDEF7 /* Default.wav in Resources */,
-				0123456789ABCDEF0123456789ABCDEF8 /* Beep-Low.wav in Resources */,
-				0123456789ABCDEF0123456789ABCDEF9 /* Beep-High.wav in Resources */,
-				0123456789ABCDEF0123456789ABCDEFA /* Laser.wav in Resources */,
-				0123456789ABCDEF0123456789ABCDEFB /* Images.xcassets in Resources */,
+				A1234567890BCDEF1234567890ABCDEF6 /* Main.storyboard in Resources */,
+				A1234567890BCDEF1234567890ABCDEF7 /* Default.wav in Resources */,
+				A1234567890BCDEF1234567890ABCDEF8 /* Beep-Low.wav in Resources */,
+				A1234567890BCDEF1234567890ABCDEF9 /* Beep-High.wav in Resources */,
+				A1234567890BCDEF1234567890ABCDEFA /* Laser.wav in Resources */,
+				A1234567890BCDEF1234567890ABCDEFB /* Images.xcassets in Resources */,
+				A1234567890BCDEF1234567890ABCDEFC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,16 +156,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0123456789ABCDEF0123456789ABCDEF01 /* Sources */ = {
+		A1234567890BCDEF1234567890ABCDEF001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0123456789ABCDEF0123456789ABCDEF0 /* AppDelegate.swift in Sources */,
-				0123456789ABCDEF0123456789ABCDEF1 /* ViewController.swift in Sources */,
-				0123456789ABCDEF0123456789ABCDEF2 /* SettingsViewController.swift in Sources */,
-				0123456789ABCDEF0123456789ABCDEF3 /* Constants.swift in Sources */,
-				0123456789ABCDEF0123456789ABCDEF4 /* SoundManager.swift in Sources */,
-				0123456789ABCDEF0123456789ABCDEF5 /* SceneDelegate.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF0 /* AppDelegate.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF1 /* ViewController.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF2 /* SettingsViewController.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF3 /* Constants.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF4 /* SoundManager.swift in Sources */,
+				A1234567890BCDEF1234567890ABCDEF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +173,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0123456789ABCDEF0123456789ABCDEF0004 /* Debug */ = {
+		A1234567890BCDEF1234567890ABCDEF0004 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,7 +183,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_MAIN_FILE = main.m;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -191,7 +203,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -205,10 +216,11 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		0123456789ABCDEF0123456789ABCDEF0005 /* Release */ = {
+		A1234567890BCDEF1234567890ABCDEF0005 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -218,7 +230,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_MAIN_FILE = main.m;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -251,6 +262,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -259,37 +271,26 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0123456789ABCDEF0123456789ABCDEF0001 /* Build configuration list for PBXNativeTarget "ChallengeSwift" */ = {
+		A1234567890BCDEF1234567890ABCDEF0001 /* Build configuration list for PBXNativeTarget "ChallengeSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0123456789ABCDEF0123456789ABCDEF0004 /* Debug */,
-				0123456789ABCDEF0123456789ABCDEF0005 /* Release */,
+				A1234567890BCDEF1234567890ABCDEF0004 /* Debug */,
+				A1234567890BCDEF1234567890ABCDEF0005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0123456789ABCDEF0123456789ABCDEF0003 /* Build configuration list for PBXProject "ChallengeSwift" */ = {
+		A1234567890BCDEF1234567890ABCDEF0003 /* Build configuration list for PBXProject "ChallengeSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0123456789ABCDEF0123456789ABCDEF0004 /* Debug */,
-				0123456789ABCDEF0123456789ABCDEF0005 /* Release */,
+				A1234567890BCDEF1234567890ABCDEF0004 /* Debug */,
+				A1234567890BCDEF1234567890ABCDEF0005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 
 /* End XCConfigurationList section */
-
-/* Begin PBXContainerItemProxy section */
-		0123456789ABCDEF0123456789ABCDEF0002 /* ChallengeSwift.app */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0123456789ABCDEF0123456789ABCDEF00000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0123456789ABCDEF0123456789ABCDEF0000;
-			remoteInfo = ChallengeSwift;
-		};
-
-/* End PBXContainerItemProxy section */
 	}
-	rootObject = 0123456789ABCDEF0123456789ABCDEF00000 /* Project object */;
+	rootObject = A1234567890BCDEF1234567890ABCDEF000000 /* Project object */;
 }
